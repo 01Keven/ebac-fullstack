@@ -13,6 +13,8 @@ public class Variaveis {
 
         boolean t = true;
 
+        // varas variaves em uma unica linha
+        int num01 = 0, num02 = 2, num03 = 3;
 
     }
 }
