@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class condicionaisdedois {
+public class CondicionaisDeDoisNumeros {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Escreva o primeiro numero:");
