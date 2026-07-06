@@ -6,6 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Estudos/entrada-de-dados/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Estudos/hello-world/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Estudos/variaveis/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Estudos/conversoes-entre-tipos/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Estudos/condicionaisexec/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Estudos/exec07/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
