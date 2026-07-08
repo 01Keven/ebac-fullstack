@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Exercicicios/exec08/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exercicicios/logincomsenha/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exercicicios/quantidadedecedulas/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exercicicios/pontecia/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

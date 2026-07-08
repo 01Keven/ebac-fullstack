@@ -5,9 +5,6 @@ public class LoginComSenha {
         String senhaVerdadeira = "admin";
         int tentativas = 0;
 
-
-
-
         while (tentativas < 3) {
             Scanner scanner = new Scanner(System.in);
             String senha = scanner.nextLine();
@@ -22,5 +19,7 @@ public class LoginComSenha {
             tentativas++;
 
         }
+
+        
     }
 }
