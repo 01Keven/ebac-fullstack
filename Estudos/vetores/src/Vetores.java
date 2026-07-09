@@ -49,6 +49,7 @@ public class Vetores {
                 clientes[i] = aux;
             }
         }
+
         // interando e concatenando por cada valor
         for (int i = 0; i < tamanho; i++) {
             // Para colocar no index 0
