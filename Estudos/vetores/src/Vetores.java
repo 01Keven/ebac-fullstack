@@ -17,7 +17,6 @@ public class Vetores {
             System.out.println(vetorInt[i]);
         }
 
-        // Buble sort
         System.out.println("--------------------");
         int tamanho = scanner.nextInt();
         scanner.nextLine();
@@ -37,6 +36,29 @@ public class Vetores {
 //        for (int i = 0; i < clientes.size(); i++) {
 //            System.out.println("cliente: "+ clientes.get(i));
 //        }
+
+
+        // percorre o vetor comparando e trocando elementos adjacentes: k - e - v - n | e->v->n->k
+        for (int i = 0; i < clientes.length; i++) {
+            if (i > 0) {
+                // salvando nome da posição anterior (0) na variavel aux
+                String aux = clientes[i - 1];
+                // trocando nome da posição atual para a posição ANTERIOR
+                clientes[i - 1] = clientes[i];
+                // trocando nome da variavel aux para a posição atual
+                clientes[i] = aux;
+            }
+        }
+        // interando e concatenando por cada valor
+        for (int i = 0; i < tamanho; i++) {
+            // Para colocar no index 0
+            clientes[i] = clientes[i].concat(" ++++++ ");
+
+            // colocando primeira letra no final
+            char primeiraPos = clientes[i].charAt(0);
+            // Por ser um char precisou converter para String
+            clientes[i] = clientes[i].concat(String.valueOf(primeiraPos));
+        }
 
         for (int i = 0; i < clientes.length; i++) {
             System.out.println("cliente: "+ clientes[i]);
