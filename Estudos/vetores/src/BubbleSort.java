@@ -1,8 +1,43 @@
 public class BubbleSort {
     public static void main(String[] args) {
-        // Inicialização do vetor desordenado que será organizado
-        int[] vetorInt = new int[] {5, 33, 2, 10, 9};
 
+        int[] vetorInt = new int[] {5, 33, 2, 10, 9};
+        String[] vetorString = new String[] {"baa","aaaaaaa","d","ip",};
+
+        ordenaVetorCrescente(vetorInt);
+        ordenaStringTamanho(vetorString);
+    }
+
+    private static void exibeVetor(int[] vetor) {
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println("Posição " + i + ": " + vetor[i]);
+        }
+    }
+
+    private static void exibeVetorString(String[] vetor) {
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.println("Posição " + i + ": " + vetor[i]);
+        }
+    }
+
+    private static void ordenaStringTamanho(String[] vetorString) {
+        for (int i = 0; i < vetorString.length; i++) {
+            for (int j = i; j < vetorString.length; j++) {
+                // Se a String for iguais retorna 0
+                // Se o valor for maior doque 0 -> j maior
+                // Se o valor for menor doque 0 -> i maior
+                if (vetorString[j].compareTo(vetorString[i]) < 0) {
+                    String aux = vetorString[i];
+                    vetorString[i] = vetorString[j];
+                    vetorString[j] = aux;
+                }
+            }
+        }
+
+        exibeVetorString(vetorString);
+    }
+
+    private static void ordenaVetorCrescente(int[] vetorInt) {
         // LAÇO EXTERNO (i): Define a posição que queremos preencher com o valor correto.
         // Ele avança casa por casa (0, 1, 2...) garantindo que o início do vetor fique ordenado.
         for (int i = 0; i < vetorInt.length; i++) {
@@ -30,16 +65,8 @@ public class BubbleSort {
                     vetorInt[j] = aux;
                 }
             }
-        }
 
-        // Chamada do método para exibir o resultado final ordenado no console
+        }
         exibeVetor(vetorInt);
-    }
-
-    // MÉTODO AUXILIAR: Percorre o vetor elemento por elemento para imprimir na tela
-    private static void exibeVetor(int[] vetor) {
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.println("Posição " + i + ": " + vetor[i]);
-        }
     }
 }
