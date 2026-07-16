@@ -31,7 +31,7 @@ public class PercorrendoMatriz {
             System.out.println();
 
         }
-
+        
         int somaTotalMatriz = 0;
 
         for (int[] linha : matriz) {
@@ -39,7 +39,7 @@ public class PercorrendoMatriz {
                 somaTotalMatriz += valorColuna;
             }
         }
-
         System.out.printf("valor total: %d", somaTotalMatriz);
+
     }
 }
